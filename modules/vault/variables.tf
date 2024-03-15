@@ -96,3 +96,9 @@ variable "enable_acl" {
   description = "Flag to enable ACL instead of bucket ownership for S3 storage"
   type        = bool
 }
+
+variable "storage_class" {
+  description = "The storage class for the persistent volume claim."
+  type        = string
+  default     = "gp3"  // Set gp2 as default for backward compatibility, or change to gp3 if preferred
+}

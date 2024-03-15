@@ -125,7 +125,7 @@ module "vault" {
   use_vault      = var.use_vault
   region         = var.region
   enable_acl     = var.enable_acl
-  s3_extra_tags  = var.s3_extra_tags
+  s3_extra_tags  = var.s3_extra_tags 
 }
 
 // ----------------------------------------------------------------------------

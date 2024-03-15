@@ -20,4 +20,8 @@ resource "helm_release" "vault-instance" {
     name  = "ingress.enabled"
     value = "false"
   }
+  set {
+    name  = "pvc.storageClassName"
+    value = var.storage_class
+  }
 }

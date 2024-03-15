@@ -346,6 +346,12 @@ variable "eks_cluster_tags" {
   default     = {}
 }
 
+variable "vault_storage_class" {
+  description = "The storage class for the persistent volume claim."
+  type        = string
+  default     = "gp3"  // Set gp2 as default for backward compatibility, or change to gp3 if preferred
+}
+
 variable "is_jx2" {
   default     = true
   type        = bool

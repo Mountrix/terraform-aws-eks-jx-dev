@@ -111,7 +111,7 @@ variable "key_name" {
 variable "volume_type" {
   description = "The volume type to use. Can be standard, gp2 or io1"
   type        = string
-  default     = "gp2"
+  default     = "gp3"
 }
 
 variable "volume_size" {
